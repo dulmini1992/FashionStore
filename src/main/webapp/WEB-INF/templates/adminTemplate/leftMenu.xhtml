@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition>
+        <div class="col-md-3 left_col">
+				<div class="left_col scroll-view">
+
+					<div class="navbar nav_title" style="border: 0;">
+						<a href="index.html" class="site_title">
+						<span class="glyphicon glyphicon-leaf" aria-hidden="true"></span>
+							<span>DECENT</span></a>
+					</div>
+					<div class="clearfix"></div>
+
+					<!-- menu prile quick info -->
+					<div class="profile">
+						<div class="profile_pic">
+							<h:graphicImage library="images" name="img.jpg" class="img-circle profile_img"/>
+						</div>
+						<div class="profile_info">
+							<span>Welcome,</span>
+							<h2>Anthony Fernando</h2>
+						</div>
+					</div>
+					<!-- /menu prile quick info -->
+
+					<br />
+
+					<!-- sidebar menu -->
+					<div id="sidebar-menu"
+						class="main_menu_side hidden-print main_menu">
+
+						<div class="menu_section">
+							<h3>General</h3>
+							<ul class="nav side-menu">
+                                                            <li><a href="#{request.contextPath}/admin/dashBoard.xhtml"><i class="fa fa-home"></i> Dashboard <span
+										></span></a>
+									</li>
+								<li><a><i class="fa fa-edit"></i> Manage Category <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="#{request.contextPath}/admin/category/list.xhtml">Available Categories</a></li>
+                                                                                <li><a href="#{request.contextPath}/admin/category/create.xhtml">Create New category</a></li>
+									</ul></li>
+                                                            
+                                                            <li><a><i class="fa fa-edit"></i> Manage  Sub Category <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="#{request.contextPath}/admin/subCategory/list.xhtml">Available  Sub Categories</a></li>
+                                                                                <li><a href="#{request.contextPath}/admin/subCategory/create.xhtml">Create New Sub category</a></li>
+									</ul></li>
+								<li><a><i class="fa fa-desktop"></i> Chamados <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+									</ul></li>
+								<li><a><i class="fa fa-newspaper-o"></i> Relatórios <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+									</ul></li>
+									<li><a><i class="fa fa-pie-chart"></i> Gráficos <span
+										class="fa fa-chevron-down"></span></a>
+									<ul class="nav child_menu" style="display: none">
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+										<li><a href="general_elements.html">General Elements</a></li>
+									</ul></li>
+                                                           
+							</ul>
+						</div>
+					</div>
+					<!-- /sidebar menu -->
+
+					<!-- /menu footer buttons -->
+					<div class="sidebar-footer hidden-small">
+						<a data-toggle="tooltip" data-placement="top" title="Settings">
+							<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="FullScreen">
+							<span class="glyphicon glyphicon-fullscreen" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="Lock"> <span
+							class="glyphicon glyphicon-eye-close" aria-hidden="true"></span>
+						</a> <a data-toggle="tooltip" data-placement="top" title="Logout">
+							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+						</a>
+					</div>
+					<!-- /menu footer buttons -->
+				</div>
+			</div>
+                    
+                    
+    </ui:composition>
+</html>
+
